@@ -1,0 +1,37 @@
+\documentclass[a4paper, 12pt, oneside]{book}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage[style = authoryear]{biblatex}
+\addbibresource{references.bib}
+\usepackage{setspace}
+\doublespace 
+\usepackage{lipsum}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{booktabs}
+
+\begin{document}
+
+\include{cover}
+\include{title}
+\include{certificate}
+\pagenumbering{roman}
+\include{abstract}
+\include{acknowledgements}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\cleardoublepage
+\pagenumbering{arabic}
+\include{chapters/introduction}
+\include{chapters/conclusion}
+\include{references}
+\include{appendices}
+
+
+\end{document}
+
